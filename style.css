@@ -106,7 +106,7 @@ a .btn {
     line-height: 1.5rem;
 }
 /* Logo */
-.hero .logo {
+.nav .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,21 +117,21 @@ a .btn {
     font-size: 2rem;
     font-weight: 700;
 }
-.hero .logo img {
+.nav .logo img {
     height: 50px;
 }
-.hero .socials {
+.nav .socials {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
-.hero .socials ul {
+.nav .socials ul {
     list-style: none;
     font-size: 1.5rem;
 }
 
-.hero .socials ul li {
+.nav .socials ul li {
     margin-left: 1rem;
     background: var(--color1);
     width: 30px;
@@ -143,16 +143,16 @@ a .btn {
     padding: 1.5rem;
 }
 
-.hero .socials ul li a {
+.nav .socials ul li a {
     color: var(--color3);
     transition: color .5s;
 }
 
-.hero .socials ul li a:hover {
+.nav .socials ul li a:hover {
     color: var(--color2);
 }
 
-.hero .socials ul {
+.nav .socials ul {
     display: flex;
 }
 /* Info */
@@ -331,23 +331,43 @@ footer {
 
 /* Responsive */
 @media all and (max-width: 767px) {
+    .hero {
+        height: 90vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-items: center;
+    }
+    .nav {
+        border: 1px solid black;
+        background-color: #000000;
+        height: 70px;
+        width: 100%;
+    }
+    .nav .logo {
+        font-size: 1.5rem;
+    }
     .hero .heroD {
-        display: none;
+        background-position: center;
+        height: 400px;
+    }
+    .hero .heroG {
+        height: 410px;
     }
 
     .hero .heroD, .hero .heroG {
         width: 100%;
-        height: 100%;
     }
 
     .hero .heroG div h1 {
         font-size: 2rem;
     }
     #info {
-        display: none;
+        /* display: none; */
+        height: 470vh;
     }
-    #info p {
-        display: none;
+    #info h1 {
+        padding: 10px;
     }
     .team__flex {
         flex-direction: column;
