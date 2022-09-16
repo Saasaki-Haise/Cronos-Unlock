@@ -331,6 +331,9 @@ footer {
 
 /* Responsive */
 @media all and (max-width: 767px) {
+    body {
+        background-color: #000000;
+    }
     .hero {
         height: 90vh;
         display: flex;
@@ -364,12 +367,17 @@ footer {
     }
     #info {
         /* display: none; */
-        height: 470vh;
+        height: auto;
+        margin-bottom: 20px;
     }
     #info h1 {
         padding: 10px;
     }
+    .team {
+        background-color: #ffffff;
+    }
     .team__flex {
+        
         flex-direction: column;
     }
 
